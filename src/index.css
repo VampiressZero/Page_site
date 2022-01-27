@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  font-family: sans-serif;
+  margin-left: 25px;
+}
+a{
+  text-decoration: none;   
+  color: #555555;
+}
+.page, .content{
+  border: 1px solid #B8B8B8;
+  padding: 10px 25px;
+  color: #555555;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nameSection button{
+  font-size: 15px;
+  background: none;
+  border: none;
+  font-family: sans-serif;  
+  color: #555555;
+}
+.chapter{
+  padding: 10px 5px;
+}
+.block{
+  margin-bottom: 25px;
+}
+.nameSection{
+  margin-bottom: 10px;
+}
+.blockEdit{
+  display: grid;
+  grid-template-columns: auto 85%;
+  justify-content: start;
+  gap: 10px 100px;
+  color: #555555;
+}
+.blockEdit span{
+  padding-top: 5px;
+}
+.blockEdit input, .blockEdit textarea{
+  font-size: 15px;
+  color: #555555;
+  border: 1px solid #e1e2e6;
+  border-radius: 5px;
+  padding: 7px 15px;
+  outline: 0;
+}
+.blockEdit textarea{
+  height: 150px;
+}
+.blockEdit input:focus, .blockEdit textarea:focus{
+  background:#e8ecef;
+  border: 1px solid #e1e2e6;
 }

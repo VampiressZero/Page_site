@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+let data = [
+  { section: "Новости", link: "/", chapter: null },
+  { section: "О нас", link: "/about/", chapter: [{ name: "Правоустанавливающие документы", link: "docs/" }, { name: "Общие сведения", link: "general/" }, { name: "Реквизиты УК", link: "props/" }] },
+  { section: "Жителям", link: "/citizen/", chapter: [{ name: "Правовая база", link: "base/" }, { name: "Образцы заявлений", link: "example/" }, { name: "Паспортный стол", link: "passport/" }, { name: "Оплата услуг ЖКХ", link: "pay/" }, { name: "Отчет о проделанной работе", link: "reports" }] }
+  ];
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App data={data} />
   </React.StrictMode>,
   document.getElementById('root')
 );
